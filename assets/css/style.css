@@ -1806,3 +1806,255 @@ section {
   }
 }
 
+/* Gradient animated heading */
+.gradient-text {
+  background: linear-gradient(90deg, #ad1457, #6a1b9a, #1976d2);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glass card effect */
+.glass-box {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Floating icons */
+.floating-icon {
+  position: absolute;
+  opacity: 0.25;
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-icon.delay {
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* CTA button pulse */
+.cta-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(173,20,87,0.5); }
+  70% { box-shadow: 0 0 0 18px rgba(173,20,87,0); }
+  100% { box-shadow: 0 0 0 0 rgba(173,20,87,0); }
+}
+.crm-card {
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.08);
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.crm-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.icon-primary {
+  font-size: 48px;
+  color: #8e1450;
+}
+
+.icon-secondary {
+  font-size: 48px;
+  color: #1a237e;
+}
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(90deg, #ff8bd1, #8ec5fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glass Cards */
+.crm-glass-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(16px);
+  border-radius: 22px;
+  padding: 30px 22px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(0,0,0,.25);
+  transition: all .45s ease;
+}
+
+.crm-glass-card h5 {
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.crm-glass-card p {
+  font-size: .95rem;
+  opacity: .85;
+}
+
+.crm-glass-card:hover {
+  transform: translateY(-14px) scale(1.05);
+  box-shadow: 0 30px 60px rgba(0,0,0,.45);
+}
+
+/* Icons */
+.icon-wrap {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+.icon-wrap.pink {
+  background: linear-gradient(135deg, #ff6ec4, #ff9a9e);
+}
+
+.icon-wrap.purple {
+  background: linear-gradient(135deg, #8ec5fc, #6a1b9a);
+}
+
+/* CTA Button */
+.glow-btn {
+  background: linear-gradient(90deg,#ff6ec4,#8ec5fc);
+  color:#1a237e;
+  font-weight:800;
+  padding:16px 48px;
+  border-radius:40px;
+  font-size:1.15rem;
+  box-shadow:0 0 40px rgba(255,110,196,.6);
+  border:none;
+  transition:.4s ease;
+}
+
+.glow-btn:hover {
+  transform: scale(1.08);
+  box-shadow:0 0 60px rgba(255,110,196,.9);
+}
+
+/* Floating Blobs */
+.bg-blob {
+  position:absolute;
+  width:300px;
+  height:300px;
+  filter: blur(80px);
+  opacity:.6;
+  z-index:0;
+}
+
+.blob-1 {
+  background:#ff6ec4;
+  top:10%;
+  left:-100px;
+}
+
+.blob-2 {
+  background:#8ec5fc;
+  bottom:10%;
+  right:-100px;
+}
+/* Icon Pills (Clean SaaS Style) */
+.icon-pill {
+  width: 180px;
+  height: 90px;
+  background: #ffffff;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: all .35s ease;
+}
+
+.icon-pill i {
+  font-size: 36px;
+  color: #6a1b9a;
+}
+
+/* Hover Effect */
+.icon-pill:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.18);
+}
+
+/* ================================
+   Why CRM – Soft Purple Background
+   ================================ */
+
+section.why-crm-section {
+  background: linear-gradient(
+    180deg,
+    #dcc5db 0%,
+    #a475c8 100%
+  ) !important;
+  padding: 70px 0;
+}
+
+/* Cards stay clean white */
+.why-crm-section .crm-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 14px 32px rgba(106, 27, 154, 0.08);
+}
+
+/* Darken subtitle text in Why CRM section */
+.why-crm-section p {
+  color: #4b4b6b !important;  /* soft dark violet-grey */
+}
+
+
+.crm-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 28px 22px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.crm-card:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+
+.crm-card h6 {
+  font-weight: 700;
+  color: #333;
+  margin-top: 15px;
+}
+
+.crm-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.crm-icon {
+  font-size: 36px;
+  color: #6a1b9a;
+}
+.feature-icon-circle {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #ad1457, #6a1b9a);
+  border-radius: 50%; /* perfect circle */
+}
+
